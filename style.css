@@ -1,0 +1,103 @@
+@font-face {
+    font-family: myfont;
+    src: url(./fonts/Wanted\ M54.rtf);
+}
+
+body{
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;}
+
+    body.light {
+        background-color: white;
+        color: black;
+    }
+    
+    body.dark {
+        background-color: black;
+        color: white;
+    }
+   
+h1.ligth{
+    color: black;
+}
+
+
+#caculadora {
+    max-width: 360px;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(10px);
+    /* _transparente */
+    box-shadow: 0px 2px 90px 1px rgb(87, 255, 241);
+    padding: 20px;
+    border-radius: 10%;
+    color: white;
+    border-left: aqua solid 10px;
+    border-right: aqua solid 10px;
+    border-top: aqua solid 5px;
+    border-bottom: aqua solid 8px;
+
+}
+
+.videofundo {
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 15%;
+}
+
+.video video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#display {
+    font-size: 25px;
+    width: 100%;
+    text-align: right;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8%;
+    color: black;
+    background-color: white;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+button {
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 20;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5%;
+    float: left;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+
